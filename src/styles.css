@@ -1,1 +1,129 @@
 /* You can add global styles to this file, and also import other style files */
+
+.main-container {
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+
+/* Sticky Footer Classes */
+
+html,
+body {
+    height: 100%;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.bgfooter {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+-1,000000+0,000000+0,000000+0,000000+0,000000+100&0+0,0.7+4 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) -1%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 4%, rgba(0, 0, 0, 0.7) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) -1%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 4%, rgba(0, 0, 0, 0.7) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) -1%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 4%, rgba(0, 0, 0, 0.7) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
+    /* IE6-9 */
+}
+
+
+/* Other Classes for Page Styling */
+
+
+/* body {
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+} */
+
+
+/* navbar */
+
+.bgnavbar {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100,000000+100,000000+100,000000+100,000000+101&0.7+96,0+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 96%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 101%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 96%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 101%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 96%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 101%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+}
+
+.bgcollapse {
+    background-color: black;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        position: relative;
+        text-align: center;
+    }
+}
+
+
+/* texto */
+
+.textformat {
+    text-align: justify;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+
+/* Paraagregar efecto fadeOut en la parte de abajo del texto */
+
+
+/* #bottom_fade {
+	width: 600px;
+	height: 200px;
+	z-index: 99;
+	position: fixed;
+	bottom: 0px;
+	background: url("bottom-fade.png") bottom center no-repeat;
+} */
