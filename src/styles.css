@@ -4,7 +4,10 @@
     margin-top: 55px;
     margin-bottom: 50px;
     background-color: white;
-    padding-bottom: 55px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -130,8 +133,7 @@ a:focus {
 
 .textformat {
     text-align: left;
-    font-family: monospace;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 @media (max-width: 767px) {
@@ -203,4 +205,92 @@ a:focus {
 
 video {
     width: 100%;
+}
+
+
+/* historia */
+
+.pic-ctn {
+    width: 100vw;
+    height: 200px;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-left: -28px;
+}
+
+.pic-ctn>div {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+div:nth-child(2) {
+    animation-delay: 2s;
+}
+
+div:nth-child(3) {
+    animation-delay: 4s;
+}
+
+div:nth-child(4) {
+    animation-delay: 6s;
+}
+
+div:nth-child(5) {
+    animation-delay: 8s;
+}
+
+.textcard {
+    margin-top: 70px;
+    font-weight: 800;
+}
+
+
+/* Shine */
+
+.shine {
+    height: 20px;
+    width: 80%;
+    background-image: radial-gradient(farthest-side at 50% -50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    position: relative;
+}
+
+.shine::before {
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0));
 }
