@@ -3,6 +3,8 @@
 .main-container {
     margin-top: 55px;
     margin-bottom: 50px;
+    background-color: white;
+    padding-bottom: 55px;
 }
 
 
@@ -93,10 +95,43 @@ body {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000', GradientType=0);
     /* IE6-9 */
+    font-weight: 900;
+    font-size: 20px;
 }
+
+.nav-item {
+    -o-transition: color .1s ease, background 1s ease;
+    -ms-transition: color .1s ease, background 1s ease;
+    -moz-transition: color .1s ease, background 1s ease;
+    -webkit-transition: color .1s ease, background 1s ease;
+    /* ...and now for the proper property */
+    transition: 1s;
+}
+
+a:focus {
+    outline: 0px;
+}
+
+
+/* .nav-item:hover {
+    background-color: rgb(114, 112, 112);
+}
+
+.active {
+    background-color: rgb(114, 112, 112);
+} */
 
 .bgcollapse {
     background-color: black;
+}
+
+
+/* texto */
+
+.textformat {
+    text-align: left;
+    font-family: monospace;
+    font-size: 16px;
 }
 
 @media (max-width: 767px) {
@@ -104,15 +139,6 @@ body {
         position: relative;
         text-align: center;
     }
-}
-
-
-/* texto */
-
-.textformat {
-    text-align: justify;
-    font-family: monospace;
-    font-size: 16px;
 }
 
 
@@ -127,3 +153,54 @@ body {
 	bottom: 0px;
 	background: url("bottom-fade.png") bottom center no-repeat;
 } */
+
+.blancoynegro {
+    filter: url('#grayscale');
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: Gray();
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.blancoynegro:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.card {
+    border: none;
+}
+
+#typer {
+    color: darkgrey;
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: 800;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding-top: 105px;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+video {
+    width: 100%;
+}
